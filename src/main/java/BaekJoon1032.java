@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BaekJoon1037 {
+public class BaekJoon1032 {
     static int N;
     static char[] answer, nameToCompare;
     public static void main(String[] args) throws IOException {
