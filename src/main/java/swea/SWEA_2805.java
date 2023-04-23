@@ -23,26 +23,8 @@ public class SWEA_2805 {
             int[][] matrix = new int[size][size];
 
             for (int i = 0; i < size; i ++) {
-//                char[] s = br.readLine().toCharArray();
-//                int[] row = new int[size];
-//                for (int j = 0; j < size; j++) {
-//                    row[i] = s[j];
-//                }
-
                 int[] row = Stream.of(br.readLine().split("")).mapToInt(Integer::parseInt).toArray();
-
-//                if (i == middleNum) {
-//                    for (int temp : row) {
-//                        sum += temp;
-//                    }
-//
-//                    sum += row[i];
-//                }
                 if (i == middleNum) { sum += Arrays.stream(row).sum(); }
-
-//                for (int j = 0; j < size; j++) {
-//                    matrix[i][j] = row[j];
-//                }
                 System.arraycopy(row, 0, matrix[i], 0, size);
 
             }
