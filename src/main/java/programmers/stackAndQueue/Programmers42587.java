@@ -1,18 +1,9 @@
 package programmers.stackAndQueue;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-import sun.security.util.ArrayUtil;
 
 public class Programmers42587 {
     public static void main(String[] args) {
@@ -69,8 +60,7 @@ public class Programmers42587 {
             if (flag) {
                 Pair temp = queue.poll();
                 queue.add(temp);
-            }
-            else {
+            } else {
                 answer++;
                 Pair pair = queue.poll();
 
