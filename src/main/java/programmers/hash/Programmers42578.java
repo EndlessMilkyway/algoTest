@@ -10,15 +10,21 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/*
+의상 (https://school.programmers.co.kr/learn/courses/30/lessons/42578)
+경우의 수 : A * B -> 각 카테고리 만 선택할수도 있기 때문에 (A + 1) * (B + 1)
+아무것도 선택하지 않을수도 있기 때문에 결과적으로 (A + 1) * (B + 1) - 1
+ */
 public class Programmers42578 {
     public static void main(String[] args) {
-        System.out.println(solution3(new String[][]{{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"},
-                {"green_turban", "headgear"}}));
         System.out.println(
-                solution3(
+                solution2(new String[][]{{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"},
+                        {"green_turban", "headgear"}}));
+        System.out.println(
+                solution2(
                         new String[][]{{"crow_mask", "face"}, {"blue_sunglasses", "face"}, {"smoky_makeup", "face"}}));
         System.out.println(
-                solution3(new String[][]{{"round_glass", "face"}, {"black_sunglasses", "face"}, {"blue_t_shirt", "top"},
+                solution2(new String[][]{{"round_glass", "face"}, {"black_sunglasses", "face"}, {"blue_t_shirt", "top"},
                         {"blue_jean", "bottom"}, {"coat", "long_coat"}}));
     }
 
@@ -72,18 +78,18 @@ public class Programmers42578 {
     public int solution5(String[][] clothes) {
         int answer = 1;
         HashMap<String, Integer> map = new HashMap<>();
-        for(int i=0; i<clothes.length; i++){
+        for (int i = 0; i < clothes.length; i++) {
             String key = clothes[i][1];
-            if(!map.containsKey(key)) {
+            if (!map.containsKey(key)) {
                 map.put(key, 1);
             } else {
                 map.put(key, map.get(key) + 1);
             }
         }
         Iterator<Integer> it = map.values().iterator();
-        while(it.hasNext()) {
-            answer *= it.next().intValue()+1;
+        while (it.hasNext()) {
+            answer *= it.next().intValue() + 1;
         }
-        return answer-1;
+        return answer - 1;
     }
 }

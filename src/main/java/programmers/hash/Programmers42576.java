@@ -7,6 +7,9 @@ import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/*
+완주하지 못한 선수 (https://school.programmers.co.kr/learn/courses/30/lessons/42576)
+ */
 public class Programmers42576 {
     public static void main(String[] args) {
         System.out.println(solution3(new String[]{"leo", "kiki", "eden"}, new String[]{"eden", "kiki"}));
@@ -54,12 +57,14 @@ public class Programmers42576 {
 
     public static String solution2(String[] participant, String[] completion) {
         Map<String, Integer> map = new HashMap<>();
+
         for (int i = 0; i < participant.length; i++) {
             map.compute(participant[i], (k, v) -> v != null ? null : 1);
             if (i < completion.length) {
                 map.compute(completion[i], (k, v) -> v != null ? null : 1);
             }
         }
+
         return map.keySet().iterator().next();
     }
 
@@ -68,7 +73,6 @@ public class Programmers42576 {
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         for (String name : completion) {
-
             Long value = participantMap.get(name) - 1L;
 
             if (value == 0L) {

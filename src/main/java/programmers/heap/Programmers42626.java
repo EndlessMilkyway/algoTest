@@ -12,7 +12,7 @@ public class Programmers42626 {
 
     public static int solution(int[] scoville, int K) {
         int answer = 0;
-        int minVal;
+        Integer minVal;
 
         //Queue<Integer> queue = Arrays.stream(scoville).boxed().collect(Collectors.toCollection(PriorityQueue::new));
         Queue<Integer> queue = new PriorityQueue<>();

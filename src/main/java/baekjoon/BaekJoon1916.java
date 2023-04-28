@@ -1,6 +1,5 @@
 package baekjoon;
 
-import com.sun.rowset.internal.Row;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,15 +9,6 @@ import java.util.StringTokenizer;
 public class BaekJoon1916 {
     private static boolean[] visited;
     private static int[] costs;
-
-    static class Node {
-        int idx, cost;
-
-        public Node(int idx, int cost) {
-            this.idx = idx;
-            this.cost = cost;
-        }
-    }
 
     public static void main(String[] args) throws IOException {
 
@@ -80,6 +70,15 @@ public class BaekJoon1916 {
                     costs[adjNode.idx] = costs[nodeIdx] + adjNode.cost;
                 }
             }
+        }
+    }
+
+    static class Node {
+        int idx, cost;
+
+        public Node(int idx, int cost) {
+            this.idx = idx;
+            this.cost = cost;
         }
     }
 }

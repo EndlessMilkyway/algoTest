@@ -5,6 +5,9 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+전화번호 목록 (https://school.programmers.co.kr/learn/courses/30/lessons/42577)
+ */
 public class Programmers42577 {
     public static void main(String[] args) {
         System.out.println(solution2(new String[]{"119", "97674223", "1195524421"}));
