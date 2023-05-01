@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.bruteforce;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -80,9 +80,7 @@ public class BaekJoon14500 {
 
             if (!visited[nx][ny]) {
                 visited[nx][ny] = true;
-
                 dfs(nx, ny, sum + field[nx][ny], length + 1);
-
                 visited[nx][ny] = false;
             }
         }
@@ -91,7 +89,6 @@ public class BaekJoon14500 {
     public static void checkout_shape(int x, int y) {
 
         for (int i = 0; i < 4; i++) {
-
             boolean outRangeFlag = false;
             int sum = 0;
 

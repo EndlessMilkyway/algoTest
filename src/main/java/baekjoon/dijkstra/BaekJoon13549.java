@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.dijkstra;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-public class BaekJoon13459 {
+public class BaekJoon13549 {
     private static int[] checkArr;
 
     public static void main(String[] args) throws IOException {

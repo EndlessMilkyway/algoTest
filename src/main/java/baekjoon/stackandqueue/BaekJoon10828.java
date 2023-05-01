@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.stackandqueue;
 
 import java.io.*;
 import java.util.*;

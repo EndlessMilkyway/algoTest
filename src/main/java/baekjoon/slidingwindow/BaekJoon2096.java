@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.slidingwindow;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.recursion;
 
 import java.io.BufferedReader;
 import java.io.IOException;
