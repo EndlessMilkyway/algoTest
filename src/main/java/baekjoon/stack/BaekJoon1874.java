@@ -1,9 +1,7 @@
-package baekjoon.stackandqueue;
+package baekjoon.stack;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.Stack;
 
 public class BaekJoon1874 {
@@ -40,7 +38,9 @@ public class BaekJoon1874 {
             }
         }
 
-        if (flag) System.out.println(bf.toString());
+        if (flag) {
+            System.out.println(bf.toString());
+        }
         br.close();
     }
 }
