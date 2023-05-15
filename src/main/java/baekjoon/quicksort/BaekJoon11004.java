@@ -53,17 +53,17 @@ public class BaekJoon11004 {
         int i = start + 1, j = end;
         while (i <= j) {
             // 피벗보다 작은 수가 나올 때까지 j--
-            while (pivot < arr[j] && j > 0) {
+            while (pivot < arr[j] && j >= start + 1) {
                 j--;
             }
             // 피벗보다 큰 수가 나올 때까지 i++
-            while (pivot > arr[i] && i < arr.length - 1) {
+            while (pivot > arr[i] && i <= end) {
                 i++;
             }
             // 찾은 i와 j를 swap
-            if (i <= j) {
+            if (i < j) {
                 swap(arr, i++, j--);
-            }
+            } else break;
         }
         // pivot 데이터를 나눠진 두 그룹의 경계 index에 저장
         arr[start] = arr[j];
