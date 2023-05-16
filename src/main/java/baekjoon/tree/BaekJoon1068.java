@@ -37,7 +37,7 @@ public class BaekJoon1068 {
     }
 
     private static void init() {
-        tree = new  ArrayList[N];
+        tree = new ArrayList[N];
         visited = new boolean[N];
         answer = 0;
         deleteNode = 0;
