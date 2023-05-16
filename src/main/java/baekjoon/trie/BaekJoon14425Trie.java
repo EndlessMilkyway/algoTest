@@ -5,16 +5,15 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class BaekJoon14425Trie {
-    private static int N, M;
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-        N = Integer.parseInt(st.nextToken());
-        M = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
 
         // 트라이 자료구조 생성하기
         Node root = new Node();
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < n; i++) {
             String input = br.readLine();
             Node now = root;
             for (int j = 0; j < input.length(); j++) {
@@ -29,7 +28,7 @@ public class BaekJoon14425Trie {
 
         // 트라이 자료구조 탐색하기
         int cnt = 0;
-        for (int i = 0; i < M; i++) {
+        for (int i = 0; i < m; i++) {
             String input = br.readLine();
             Node now = root;
             for (int j = 0; j < input.length(); j++) {
