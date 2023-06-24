@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 // 팔씨름
-public class SWEA_13547 {
+public class SWEA13547 {
     public static void main(String[] args) throws Exception
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

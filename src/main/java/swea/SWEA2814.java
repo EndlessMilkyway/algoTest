@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class SWEA_2814 {
+public class SWEA2814 {
     private static int[][] graph;
     private static boolean[] visited;
     private static int n, m, depth;

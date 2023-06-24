@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Array;
 
 // N-queen
-public class SWEA_2806 {
+public class SWEA2806 {
     private static int n;
     private static int[] loc;
     private static int cnt;

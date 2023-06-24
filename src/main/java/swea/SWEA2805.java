@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 // 농작물 수확하기
-public class SWEA_2805 {
+public class SWEA2805 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

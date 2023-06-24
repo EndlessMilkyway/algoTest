@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 // 햄버거 다이어트
-public class SWEA_5215 {
+public class SWEA5215 {
     private static int[] score;
     private static int[] calorie;
     private static int n; // ingredients amount

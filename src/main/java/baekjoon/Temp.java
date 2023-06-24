@@ -8,12 +8,28 @@ public class Temp {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
+        int T = Integer.parseInt(br.readLine());
         StringTokenizer st;
-        int n = Integer.parseInt(br.readLine());
-        for (int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine(), " ");
-            sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())).append("\n");
+
+        for (int i = 0; i < T; i++) {
+            st = new StringTokenizer(br.readLine());
+            int H = Integer.parseInt(st.nextToken());
+            int W = Integer.parseInt(st.nextToken());
+            int N = Integer.parseInt(st.nextToken());
+            int currentPosition = 1;
+
+            while (true) {
+                if (H < N) {
+                    currentPosition++;
+                    N -= H;
+                    continue;
+                }
+
+                sb.append(N * 100 + currentPosition).append("\n");
+                break;
+            }
         }
+
         System.out.println(sb);
     }
 }
