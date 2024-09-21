@@ -19,7 +19,7 @@ public class BaekJoon11004 {
         System.out.println(arr[k - 1]);
     }
 
-    // 병합 정렬 메서드
+    // 퀵 정렬 메서드
     private static void quickSort(int[] arr, int start, int end, int k) {
         if (start < end) {
             // 피벗 구하는 메서드 partition 호출
